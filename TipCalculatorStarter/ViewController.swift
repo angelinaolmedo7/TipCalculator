@@ -22,6 +22,17 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tipPercentSegmentedControl: UISegmentedControl!
     
+    @IBOutlet weak var outputCardView: UIView!
+    @IBOutlet weak var tipAmountTitleLabel: UILabel!
+    @IBOutlet weak var tipAmountLabel: UILabel!
+    @IBOutlet weak var totalAmountTitleLabel: UILabel!
+    @IBOutlet weak var totalAmountLabel: UILabel!
+    
+    @IBOutlet weak var resetButton: UIButton!
+    @IBAction func resetButtonTapped(_ sender: Any) {
+        print("tap")
+    }
+    
     @IBAction func tipPercentChanged(_ sender: UISegmentedControl) {
     }
     

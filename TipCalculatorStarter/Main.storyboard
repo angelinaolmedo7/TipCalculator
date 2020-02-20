@@ -173,13 +173,19 @@
                                     <constraint firstItem="Ha0-ax-qfI" firstAttribute="leading" secondItem="a85-hS-h6f" secondAttribute="leading" constant="22" id="okQ-Pv-Q57"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zeb-r3-6wh">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zeb-r3-6wh" userLabel="resetButton">
                                 <rect key="frame" x="15" y="583" width="345" height="60"/>
                                 <color key="backgroundColor" name="tcDarkBlue"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="9JY-PI-Gfz"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <state key="normal" title="RESET">
+                                    <color key="titleColor" name="tcWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GT9-IM-1d7"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" name="tcOffWhite"/>
@@ -206,9 +212,15 @@
                         <outlet property="billAmountTextField" destination="2ah-Fs-ZFL" id="lfF-4d-3p0"/>
                         <outlet property="headerView" destination="uae-ci-apE" id="bU0-Zy-7Ci"/>
                         <outlet property="inputCardView" destination="FPg-RS-ULK" id="OCH-2Q-PIg"/>
+                        <outlet property="outputCardView" destination="a85-hS-h6f" id="I5p-Lu-A6I"/>
+                        <outlet property="resetButton" destination="Zeb-r3-6wh" id="odh-NW-Zxr"/>
                         <outlet property="themeSwitch" destination="AXo-3v-9Rk" id="rSO-gf-TKB"/>
+                        <outlet property="tipAmountLabel" destination="VNL-1V-Dif" id="les-kO-5TJ"/>
+                        <outlet property="tipAmountTitleLabel" destination="t97-AN-nvm" id="1cT-YR-lNP"/>
                         <outlet property="tipPercentSegmentedControl" destination="DMa-pa-dL9" id="0vd-rW-cbd"/>
                         <outlet property="titleHeader" destination="h1b-L0-eYj" id="TxC-u5-UIZ"/>
+                        <outlet property="totalAmountLabel" destination="THc-rT-MdK" id="OZ0-Vj-Z56"/>
+                        <outlet property="totalAmountTitleLabel" destination="hHK-E3-qjh" id="Pio-SK-ANK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
