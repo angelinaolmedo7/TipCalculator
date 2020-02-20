@@ -219,6 +219,7 @@
                         <outlet property="tipAmountTitleLabel" destination="t97-AN-nvm" id="1cT-YR-lNP"/>
                         <outlet property="tipPercentSegmentedControl" destination="DMa-pa-dL9" id="0vd-rW-cbd"/>
                         <outlet property="titleHeader" destination="h1b-L0-eYj" id="TxC-u5-UIZ"/>
+                        <outlet property="titleLabel" destination="7XQ-en-v8Z" id="tGq-sk-CMb"/>
                         <outlet property="totalAmountLabel" destination="THc-rT-MdK" id="OZ0-Vj-Z56"/>
                         <outlet property="totalAmountTitleLabel" destination="hHK-E3-qjh" id="Pio-SK-ANK"/>
                     </connections>
